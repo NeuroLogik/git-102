@@ -1,7 +1,12 @@
 SUFFIXES = ['KB','MB','GB','TB','PB','EB','ZB','YB']
 
 def approximate_size(size):
-    """Convert a file size to human-readable from."""
+    """Convert a file size to human-readable from.
+    Keyword arguments:
+    size -- file size in bytes
+
+    Returns : string
+    """
     multiple = 1024
     for suffix in SUFFIXES:
         size / multiple
